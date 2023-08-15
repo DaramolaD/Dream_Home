@@ -1,7 +1,7 @@
-import Logo from "../img/Logo.png";
-import hero_img from "../img/hero_img.png"
-import icon from "../img/icon-arrow-down.png"
-import arrow_slant from "../img/arrow_slant.png"
+import Logo from "./logo.png";
+import hero_img from "./hero_img.png"
+import icon from "./icon-arrow-down.png"
+import arrow_slant from "./arrow_slant.png"
 
 
 export {
