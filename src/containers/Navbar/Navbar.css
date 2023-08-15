@@ -1,0 +1,109 @@
+.logo {
+  width: 80px;
+}
+
+.nav_list {
+  gap: 30px;
+}
+.nav_list .nav_link {
+  font-size: 20px;
+  position: relative;
+}
+.lg_nav_link a:hover > .nav_link::before {
+  content: "";
+  border-bottom: 1px solid var(--brandColor);
+  width: 100%;
+  display: inline-block;
+  bottom: -5px;
+  position: absolute;
+}
+header {
+  color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+.header .container {
+  height: 70px;
+  position: relative;
+}
+.nav_btn button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+.nav_list_sm,
+.menu, .closeMenu {
+  display: none;
+}
+@media screen and (max-width: 1000px) {
+  .nav_list .nav_link {
+    font-size: 16px;
+  }
+  .nav_btn button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .nav_list {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lg_nav_link {
+    display: none;
+  }
+  .menu, .closeMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .menu,
+  .closeMenu {
+    width: 25px;
+    height: 25px;
+  }
+  .nav_list_sm {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    padding-inline: 20px;
+    width: 100%;
+    background-color: #161616;
+    padding-block: 20px 50px;
+    z-index: 1000;
+  }
+  .nav_list_sm .nav_list {
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav_list_sm .nav_list a {
+    padding: 10px 15px;
+  }
+  .nav_list_sm .nav_list a,
+  .nav_btn .btn_link {
+    transition: 0.5s all cubic-bezier(0.77, 0, 0.18, 1);
+    border-bottom: 1px solid var(--brandColor);
+    width: 100%;
+  }
+  .nav_list_sm .nav_list a:hover,
+  .nav_list_sm .nav_btn .btn_link:hover {
+    box-shadow: 1px 1px 20px var(--brandColor);
+    background-color: var(--brandColor);
+    border-radius: 20px;
+    width: 100%;
+  }
+  .nav_list_sm .nav_btn {
+    padding-top: 20px;
+  }
+  .nav_list_sm .nav_btn .btn_link {
+    padding: 10px 15px;
+    line-height: 25px;
+    width: 100%;
+    display: flex;
+  }
+}

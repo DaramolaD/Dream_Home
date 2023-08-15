@@ -1,0 +1,34 @@
+.projectItemCont {
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth;
+  overflow-x: scroll;
+  gap: 40px;
+}
+.projectItem {
+  max-width: 600px;
+  width: 100%;
+}
+.projectImg {
+  width: 100%;
+}
+.projectContent {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+.projectContent .projectDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 15px;
+  color: var(--color2);
+  gap: 50px;
+}
+.projectContent .projectDetail {
+  display: flex;
+  gap: 20px;
+}

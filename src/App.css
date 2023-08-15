@@ -1,0 +1,146 @@
+/* @import url(./assets/font/poppins/Poppins-Regular.ttf); */
+
+*,
+*::after,
+::before {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/font/poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins_Medium;
+  src: url(./assets/font/poppins/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: Poppins_Bold;
+  src: url(./assets/font/poppins/Poppins-Bold.ttf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  /* Color */
+
+  --color1: #fe6a3f;
+  --color2: #979797;
+  --brandColor: #ff7041;
+  --brandColor2: #ff71419a;
+
+  /* Background Color */
+
+  --bg1: #161616;
+  --bg2: #1b1725;
+  --b3: #101010;
+  --b4: #252525;
+
+  /* font-size */
+  --font1: 1rem;
+  --font15: 1.5rem;
+  --font2: 2rem;
+  --font25: 2.5rem;
+}
+
+/* constants */
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+textarea,
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+/* REUSABLES */
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  margin: 0px auto;
+}
+img {
+  width: 100%;
+}
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.p20 {
+  padding-inline: 20px;
+}
+.h2B {
+  padding-bottom: 50px;
+}
+.bg1 {
+  background-color: var(--bg1);
+}
+.color1 {
+  color: var(--color1);
+}
+
+.sectionTitle {
+  font-size: var(--font2);
+  color: #fff;
+}
+.sectionSubTitle {
+  font-size: var(--font15);
+  padding-bottom: 15px;
+}
+.para {
+  font-size: 1rem;
+}
+.secTop {
+  padding-top: 80px;
+}
+.secTop2 {
+  padding-top: 150px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flexBtw {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.date {
+  color: var(--color2);
+}
+.location {
+  color: var(--brandColor2);
+}
+.residential {
+  color: var(--color1);
+}
+
+.btn {
+  padding: 10px 20px;
+}
+.btn2 {
+  padding: 10px 20px;
+  background-color: var(--brandColor);
+  border-radius: 20px;
+}
+.btn2:hover {
+  box-shadow: 1px 1px 20px 5px var(--brandColor);
+}
+.btn:hover {
+  box-shadow: 1px 1px 20px 5px var(--brandColor);
+  background-color: var(--brandColor);
+  border-radius: 20px;
+}

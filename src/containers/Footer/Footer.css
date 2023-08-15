@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--bg1);
+  padding-block: 100px 20px;
+  color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* position: relative; */
+}
+.footer .footerNav {
+  gap: 20px;
+}
+.footer .stroke {
+  -webkit-text-stroke: 1px var(--brandColor);
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  color: transparent;
+  bottom: 0px;
+  right: 0px;
+}
+.footer .privacy {
+  color: var(--brandColor);
+  opacity: 0.5;
+}
+.footer .brand h4 {
+  font-size: 25px;
+}
+.footerCont {
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .footerCont,
+  .footerNav {
+    flex-direction: column;
+  }
+  .footerCont {
+    gap: 40px;
+  }
+}

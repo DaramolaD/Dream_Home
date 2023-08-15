@@ -1,0 +1,15 @@
+.about {
+    color: #fff;
+}
+.about h2 {
+    text-align: center;
+}
+.brand_history {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.brand_history > * {
+    flex: 1 1 50%;
+}
