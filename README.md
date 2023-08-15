@@ -21,8 +21,21 @@ Dream_Home Constructions is a web application developed using React.js that show
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/your-username/industrial-dynamics.git
+   git clone https://github.com/DaramolaD/Dream_Home.git
+
+2. Navigate to the project directory:
+
+    cd Dream_Home
+
+3. Install dependencies:
+
+    npm install
+
+## Usage
+
+- Start the development server:
+
+npm start
 
 
 ## Technologies Used
