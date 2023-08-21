@@ -1,8 +1,8 @@
-# Dream_Home Constructions - Construction Company Website
+#  Alliance Avenues Construction - Construction Company Website
 
 ## Overview
 
-Dream_Home Constructions is a web application developed using React.js that showcases the portfolio of a construction company. The application allows users to explore the company's completed projects, view project details, inquire about services and expertise in the industrial sector.It offers a user-friendly experience, ensuring optimal cross-device performance.
+ Alliance Avenues Construction is a web application developed using React.js that showcases the portfolio of a construction company. The application allows users to explore the company's completed projects, view project details, inquire about services and expertise in the industrial sector.It offers a user-friendly experience, ensuring optimal cross-device performance.
 
 ## Key Features
 

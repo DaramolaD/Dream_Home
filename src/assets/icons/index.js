@@ -4,6 +4,7 @@ import email from "../icons/email.svg";
 import twitter from "../icons/twitter.svg";
 import location from "../icons/location.svg";
 import linkedin from "../icons/linkedin.svg"
+import star from "../icons/star.svg"
 
 export {
     menu,
@@ -11,5 +12,6 @@ export {
     email,
     location,
     twitter,
+    star,
     linkedin,
 }

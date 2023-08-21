@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Logo } from "../../assets/img";
+import { Logo, brand_logo, brand_logo_2 } from "../../assets/img";
 import navLink from "../../assets/data/navLink";
 import { Link } from "react-router-dom";
 import { closeMenu, menu } from "../../assets/icons";
@@ -14,9 +14,13 @@ const Navbar = () => {
   return (
     <header className="header bg1">
       <div className="container flex_center p20">
-        <div className="logo">
-          <span>Dreamy</span>
-        </div>
+        <Link to="/">
+          <div className="logo">
+            {/* <span className="a1">A</span>
+          <span className="a2">A</span> */}
+            <img src={brand_logo_2} alt="brand_logo" />
+          </div>
+        </Link>
         <ul className="nav_list flex_center lg_nav_link">
           {navLink.map((item) => (
             <Link to={`/${item.navLink}`} key={item.id}>
@@ -40,7 +44,7 @@ const Navbar = () => {
               ))}
             </ul>
             <div className="nav_btn">
-              <Link to="/contact" className="btn_link">
+              <Link to="/contact" className="btn_link" onClick={toggleNav}>
                 Let's Talk Now
               </Link>
             </div>

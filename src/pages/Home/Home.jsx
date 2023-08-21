@@ -2,7 +2,7 @@ import React from "react";
 
 import "./Home.css";
 import { hero_img } from "../../assets/img";
-import { Hero, ProjectComponent, WhyChooseUs } from "../../components";
+import { About, Hero, ProjectComponent, ServiceComponent, Welcome, WhyChooseUs } from "../../components";
 import BlogComponent from "../../components/BlogComponent/BlogComponent";
 import CTA from "../../components/CTA/CTA";
 
@@ -13,6 +13,9 @@ const Home = () => {
     <section className="home bg1">
       <div className="container">
         <Hero />
+        <Welcome />
+        <About />
+        <ServiceComponent />
         <WhyChooseUs />
         <ProjectComponent />
         <BlogComponent />

@@ -1,0 +1,12 @@
+.welcome {
+  color: #fff;
+  text-align: center;
+  padding-inline: 50px;
+  padding-bottom: 80px;
+}
+.welcome h3 {
+    padding-bottom: 30px;
+}
+.welcome .para {
+  line-height: 2rem;
+}

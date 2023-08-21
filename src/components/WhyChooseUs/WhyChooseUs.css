@@ -23,8 +23,12 @@
   color: var(--color2);
   line-height: 36px;
 }
+.chooseItem_content > ul {
+  text-align: left;
+}
 .chooseItem_content .para {
   color: var(--color2);
+  list-style: disc;
 }
 
 
@@ -33,9 +37,15 @@
 @media screen and (max-width: 550px) {
   .chooseItems {
     padding-inline: 0px;
+    grid-template-columns: 1fr;
   }
   .chooseItem {
-    padding: 20px 10px;
+    padding: 20px 0px !important;
+    border: 0px !important;
+    border-bottom: 1px solid var(--brandColor) !important;
+  }
+  .chooseItem:nth-child(1) {
+    border-top: 1px solid var(--brandColor) !important;
   }
   .chooseItem:not(:nth-child(2), :nth-child(4)) {
     padding: 20px 5px;

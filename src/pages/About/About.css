@@ -1,15 +1,81 @@
 .about {
-    color: #fff;
+  color: #fff;
 }
-.about h2 {
-    text-align: center;
+.brand_text {
+  padding-bottom: 80px;
 }
-.brand_history {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
+.brand_text,
+.storyCont p {
+  padding-inline: 20px;
 }
-.brand_history > * {
-    flex: 1 1 50%;
+.storyCont h3 {
+  padding-bottom: 20px;
+}
+.storyCont p {
+  line-height: 35px;
+}
+.brand_story,
+.approach {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  border-top: 1px solid gray;
+  padding-block: 80px;
+}
+.brand_story > *,
+.approach > * {
+  flex: 1 1 50%;
+}
+.brand_story img {
+  max-height: 400px;
+  object-fit: cover;
+  height: 100%;
+}
+.brand_story .storyCont {
+  text-align: center;
+}
+.philosophy,
+.vision,
+.aboutCta,
+.approachContent {
+  border-top: 1px solid gray;
+  padding-block: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  line-height: 30px;
+}
+.aboutCta .ctaContent h3 {
+  padding-bottom: 30px;
+}
+.aboutCta .btn2 {
+  max-width: fit-content;
+}
+.approachContent {
+  border: none;
+  padding-block: 0px;
+}
+
+@media screen and (max-width: 950px) {
+  .brand_story,
+  .approach {
+    grid-template-columns: 1fr;
+  }
+  .brand_story .storyCont {
+    order: 1;
+    text-align: left;
+  }
+  .brand_story img {
+    order: 2;
+  }
+  .philosophy,
+  .vision,
+  .aboutCta,
+  .approachContent {
+    align-items: flex-start;
+  }
 }

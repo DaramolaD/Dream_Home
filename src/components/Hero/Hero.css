@@ -34,10 +34,44 @@
 
 /* HERO IMG */
 .hero_img {
-  height: 400px;
-}
-.hero_img img {
+  min-height: 400px;
   height: 100%;
+  padding-top: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(248, 106, 40, 0.31),
+      rgb(22, 22, 22)
+    ),
+    url("/src/assets/img/brand/heroImg.jpg");
+  /* url("/src/assets/img/brand/crank_skeleton.jpg"); */
+}
+.hero_img .hero_Img_text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+.hero_img .hero_Img_text h3 {
+  font-size: 2rem;
+}
+.hero_img .hero_Img_text p {
+  font-size: 1.25rem;
+  padding: 20px;
+}
+.star_cont {
+  display: flex;
+  gap: 6px;
+}
+.heroItem_star {
+  max-width: 20px;
 }
 
 @media screen and (min-width: 1367px) {
@@ -45,6 +79,7 @@
     font-size: 5.5rem;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .heading {
     font-size: 4rem;
@@ -55,7 +90,14 @@
   .content_item .no span {
     font-size: 1rem;
   }
+  .hero_img .hero_Img_text h3 {
+    font-size: 1.9rem;
+  }
+  .hero_img .hero_Img_text p {
+    font-size: 1.2rem;
+  }
 }
+
 @media screen and (max-width: 950px) {
   .heading {
     font-size: 3rem;
@@ -69,13 +111,20 @@
   .content_item {
     padding-inline: 20px;
   }
+  .hero_img .hero_Img_text h3 {
+    font-size: 1.5rem;
+  }
 }
+
 @media screen and (max-width: 768px) {
   .heading {
     font-size: 2.5rem;
   }
   .hero_content {
     padding-block: 120px 50px;
+  }
+  .hero_img {
+    height: 300px;
   }
   .content_item .no {
     font-size: 1.7rem;
@@ -93,16 +142,11 @@
   .content_item > :nth-child(4) {
     justify-self: flex-end;
   }
-  .sectionTitle {
-    font-size: 1.5rem;
-  }
   .sectionSubTitle {
     font-size: 1rem;
   }
-  .para {
-    font-size: 0.8rem;
-  }
 }
+
 @media screen and (max-width: 590px) {
   .heading {
     font-size: 2rem;

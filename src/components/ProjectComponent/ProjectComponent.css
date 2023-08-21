@@ -4,13 +4,24 @@
   scroll-behavior: smooth;
   overflow-x: scroll;
   gap: 40px;
+  overflow-y: hidden;
 }
 .projectItem {
   max-width: 600px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .projectImg {
   width: 100%;
+  max-width: 600px;
+  max-height: 345px;
+  overflow: hidden;
+  height: 100%;
+  flex: 1 1 50%;
+}
+.projectImg img {
+  height: 100%;
 }
 .projectContent {
   display: flex;
@@ -19,6 +30,7 @@
   align-items: flex-start;
   flex-direction: column;
   color: #fff;
+  flex: 1 1 50%;
 }
 .projectContent .projectDetails {
   display: flex;

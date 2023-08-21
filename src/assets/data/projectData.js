@@ -1,23 +1,24 @@
-import { hero_img } from "../img";
+import { hero_img, project_3 } from "../img";
+import { recycle } from "../img/brand";
 
 const projectData = [
   {
     id: 1,
-    img: hero_img,
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, repudiandae.",
+    img: project_3,
+    subTitle: "Francis Hunter.",
+    para: "Design Project",
     date: "2022",
     location: "London",
     type: "Residential",
   },
   {
     id: 2,
-    img: hero_img,
-    subTitle: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
-    para: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, repudiandae.",
-    date: "2022",
-    location: "London",
-    type: "Residential",
+    img: recycle,
+    subTitle: "G-Energy.",
+    para: " Anaerobic Digester.",
+    date: "2021",
+    location: "California",
+    type: "Industrial",
   },
 ];
 
