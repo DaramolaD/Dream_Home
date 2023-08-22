@@ -1,6 +1,9 @@
 .about {
   color: #fff;
 }
+.about .brand_text {
+  border: 0px;
+}
 .brand_text {
   padding-bottom: 80px;
 }
