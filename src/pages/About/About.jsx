@@ -13,7 +13,9 @@ const About = () => {
           <h3 className="sectionTitle">{aboutUsData.welcome.details}</h3>
         </div>
         <div className="brand_story mTop3">
-          <img src={storyImg} alt="about_img" />
+          <div className="aboutImgCont">
+            <img src={storyImg} alt="about_img" />
+          </div>
           <div className="storyCont">
             <h3 className="sectionTitle">{aboutUsData.story.title}</h3>
             <p className="para">{aboutUsData.story.details}</p>
@@ -34,7 +36,9 @@ const About = () => {
             {/* <video src={aboutVideo} loop="" muted="" autoplay=""></video> */}
             <video autoplay muted loop>
               <source src={aboutVideo} type="video/mp4" />
-              <p className="para">Sorry, Your Browser doesn't support Embedded videos. </p>
+              <p className="para">
+                Sorry, Your Browser doesn't support Embedded videos.{" "}
+              </p>
             </video>
           </div>
         </div>
@@ -44,8 +48,8 @@ const About = () => {
           <p className="para">{aboutUsData.vision.details}</p>
         </div>
         {/* <div className="team mTop3"> */}
-          {/* Team */}
-          {/* <h3>{aboutUsData.vision.title}</h3>
+        {/* Team */}
+        {/* <h3>{aboutUsData.vision.title}</h3>
           <p>{aboutUsData.vision.details}</p> */}
         {/* </div> */}
 
@@ -54,7 +58,9 @@ const About = () => {
             <h3 className="sectionTitle">{aboutUsData.alliance.title}</h3>
             <p className="para">{aboutUsData.alliance.details}</p>
           </div>
-          <Link to="/contact" className="btn2">Contact Us</Link>
+          <Link to="/contact" className="btn2">
+            Contact Us
+          </Link>
         </div>
       </div>
     </div>

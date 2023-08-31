@@ -1,5 +1,5 @@
 import { star } from "../icons";
-import { project_1 } from "../img";
+import { project_1, project_4 } from "../img";
 
 const brandSlogan = "Avenues of Excellence, Crafted by Alliance.";
 
@@ -186,7 +186,7 @@ const serviceData = {
       title: "Renovation and Remodeling",
       details:
         "Breathing new life into existing spaces is an art we excel in. Our renovation and remodeling services breathe fresh vitality into homes and establishments, striking a balance between functionality and aesthetics. Whether it's a single room or an entire property, we transform spaces to align with evolving needs.",
-      img: project_1,
+      img: project_4,
     },
     {
       id: 4,

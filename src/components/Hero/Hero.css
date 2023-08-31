@@ -1,7 +1,7 @@
 .hero_content {
   display: flex;
   flex-direction: column;
-  padding-block: 70px 50px;
+  padding-block: 150px 50px;
   gap: 70px;
   color: #fff;
 }
@@ -119,9 +119,6 @@
 @media screen and (max-width: 768px) {
   .heading {
     font-size: 2.5rem;
-  }
-  .hero_content {
-    padding-block: 120px 50px;
   }
   .hero_img {
     height: 300px;
