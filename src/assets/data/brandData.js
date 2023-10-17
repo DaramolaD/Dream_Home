@@ -1,5 +1,5 @@
 import { star } from "../icons";
-import { project_1, project_4 } from "../img";
+import { custom_project, project_1, project_4 } from "../img";
 
 const brandSlogan = "Avenues of Excellence, Crafted by Alliance.";
 
@@ -221,7 +221,7 @@ const serviceData = {
       title: "Custom Projects and Collaborations",
       details:
         "Innovation knows no bounds. If you have a unique project or a collaboration in mind, we're here to turn your ideas into tangible structures. Our custom project services encompass unconventional designs, experimental concepts, and collaborative ventures that push the boundaries of construction.",
-      img: project_1,
+      img: custom_project,
     },
   ],
 };

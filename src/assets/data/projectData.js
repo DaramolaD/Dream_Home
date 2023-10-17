@@ -1,4 +1,4 @@
-import { hero_img, project_3 } from "../img";
+import { project_3 } from "../img";
 import { recycle } from "../img/brand";
 
 const projectData = [

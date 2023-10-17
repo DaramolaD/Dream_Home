@@ -1,0 +1,216 @@
+
+
+Home=======================================
+
+import React from 'react';
+
+const HomePage = () => {
+  const homepageSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Construction Co.',
+    url: 'https://www.example.com',
+  };
+
+  const schemaJSON = JSON.stringify(homepageSchema);
+
+  return (
+    <div>
+      <h1>Welcome to Construction Co.</h1>
+      <p>Your reliable construction partner.</p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default HomePage;
+
+About==================================
+
+import React from 'react';
+
+const AboutPage = () => {
+  const aboutSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'About Us',
+    url: 'https://www.example.com/about',
+  };
+
+  const schemaJSON = JSON.stringify(aboutSchema);
+
+  return (
+    <div>
+      <h1>About Us</h1>
+      <p>We are a leading construction company...</p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default AboutPage;
+
+
+Service===============
+
+import React from 'react';
+
+const ServicesPage = () => {
+  const services = [
+    {
+      name: 'Residential Construction',
+      description: 'High-quality construction for homes.',
+    },
+    {
+      name: 'Commercial Projects',
+      description: 'Large-scale construction for businesses.',
+    },
+    {
+      name: 'Renovations',
+      description: 'Revitalize your existing spaces.',
+    },
+    // Add more services as needed
+  ];
+
+  const servicesSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: services.map((service, index) => ({
+      '@type': 'Service',
+      position: index + 1,
+      name: service.name,
+      description: service.description,
+    })),
+  };
+
+  const schemaJSON = JSON.stringify(servicesSchema);
+
+  return (
+    <div>
+      <h1>Our Services</h1>
+      <ul>
+        {services.map((service, index) => (
+          <li key={index}>
+            <h2>{service.name}</h2>
+            <p>{service.description}</p>
+          </li>
+        ))}
+      </ul>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default ServicesPage;
+
+
+
+Contact========================================
+import React from 'react';
+
+const ContactPage = () => {
+  const contactSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ContactPage',
+    name: 'Contact Us',
+    url: 'https://www.example.com/contact',
+  };
+
+  const schemaJSON = JSON.stringify(contactSchema);
+
+  return (
+    <div>
+      <h1>Contact Us</h1>
+      <p>Feel free to get in touch with us...</p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default ContactPage;
+
+Project===============================
+
+import React from 'react';
+
+const ProjectsPage = () => {
+  const projectsSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Our Projects',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        item: {
+          '@type': 'WebPage',
+          name: 'Project A',
+          url: 'https://www.example.com/projects/project-a',
+        },
+      },
+      // Add more projects as needed
+    ],
+  };
+
+  const schemaJSON = JSON.stringify(projectsSchema);
+
+  return (
+    <div>
+      <h1>Our Projects</h1>
+      <ul>
+        <li>
+          <a href="/projects/project-a">Project A</a>
+        </li>
+        {/* Add more project links */}
+      </ul>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default ProjectsPage;
+
+
+ProjectItem===================================
+
+import React from 'react';
+
+const ProjectItemPage = ({ projectName, projectDescription }) => {
+  const projectItemSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: projectName,
+    description: projectDescription,
+    url: `https://www.example.com/projects/${projectName}`,
+  };
+
+  const schemaJSON = JSON.stringify(projectItemSchema);
+
+  return (
+    <div>
+      <h1>{projectName}</h1>
+      <p>{projectDescription}</p>
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schemaJSON }} />
+    </div>
+  );
+};
+
+export default ProjectItemPage;
+
+
+
+
+
+
+
+
+
+
+
+

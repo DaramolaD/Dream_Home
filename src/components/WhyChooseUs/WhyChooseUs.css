@@ -1,6 +1,6 @@
 .whyChooseUs {
   background-color: var(--bg3);
-  color: #fff;
+  color: var(--colorW);
 }
 .chooseItems {
   display: grid;

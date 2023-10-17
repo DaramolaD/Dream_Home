@@ -4,7 +4,8 @@
   padding-bottom: 80px;
 }
 .welcome h3 {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
+  color: var(--colorW);
 }
 .welcome .para {
   line-height: 2rem;

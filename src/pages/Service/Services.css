@@ -16,7 +16,7 @@
   flex: 1 1 50%;
 }
 .serviceItemContent {
-  color: #fff;
+  color: var(--colorW);
 }
 .serviceItemContent h3,
 .serviceItemContent .para {

@@ -44,7 +44,46 @@ body {
   --font15: 1.5rem;
   --font2: 2rem;
   --font25: 2.5rem;
+
 }
+.light-theme {
+  --color1: #fe6a3f;
+  --color2: #161616;
+  --colorW: #161616;
+  /* --brandColor: #ff7041; */
+  --brandColor: #f86a28;
+  --brandColor2: #ff71419a;
+
+  /* Background Color */
+
+  --bg1: #fafafa;
+  --bg2: #1b1725;
+  --b3: #101010;
+  --b4: #979797;
+  --box: rgba(27, 23, 37, 0.11);
+  --shadow: #16161638;
+  --border: var(--shadow);
+}
+.dark-theme {
+  --color1: #fe6a3f;
+  --color2: #979797;
+  --colorW: #fff;
+  /* --brandColor: #ff7041; */
+  --brandColor: #f86a28;
+  --brandColor2: #ff71419a;
+  --border: var(--brandColor);
+
+  /* Background Color */
+
+  --bg1: #161616;
+  --bg2: #fff;
+  --b3: #101010;
+  --b4: #252525;
+  --box: #ffffff42;
+  --shadow: #16161638;
+}
+
+
 
 /* constants */
 
@@ -69,7 +108,7 @@ input {
 
 .sectionHeading {
   font-size: 3rem;
-  color: #fff;
+  color: var(--colorW);
   text-align: center;
 }
 
@@ -104,7 +143,7 @@ video {
 }
 .sectionTitle {
   font-size: var(--font2);
-  color: #fff;
+  color: var(--colorW);
   text-align: center;
   line-height: 3rem;
 }
@@ -114,6 +153,7 @@ video {
 }
 .para {
   font-size: 1rem;
+  color: var(--colorW);
 }
 .secTop {
   padding-top: 80px;
@@ -140,7 +180,7 @@ video {
   color: var(--color2);
 }
 .location {
-  color: var(--brandColor2);
+  color: var(--color1);
 }
 .residential {
   color: var(--color1);
@@ -161,11 +201,11 @@ video {
   box-shadow: 1px 1px 20px 5px var(--brandColor);
   background-color: var(--brandColor);
   border-radius: 20px;
-  color: #fff;
+  color: var(--colorW);
 }
 .brand_text {
   padding: 20px;
-  color: #fff;
+  color: var(--colorW);
 }
 .brand_text h3 {
   text-align: center;
@@ -184,6 +224,18 @@ video {
 }
 .mainTimgCont img {
   height: 100%;
+}
+
+.readMore {
+  background-color: var(--brandColor);
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.5 all ease-in-out;
+}
+.readMore:hover {
+  box-shadow: 1px 1px 20px 5px var(--brandColor);
 }
 
 @media screen and (max-width: 950px) {

@@ -2,11 +2,22 @@ import React from "react";
 import "./Footer.css";
 import navLink from "../../assets/data/navLink";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container p20">
+      <motion.div
+        className="container p20"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        variants={{
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
+        }}
+      >
         <div className="footerCont flexBtw">
           <div className="brand">
             <h4>Dreamy Home</h4>
@@ -24,7 +35,7 @@ const Footer = () => {
           <p className="stroke">DREAMY</p>
           <span>Privacy Policy</span>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

@@ -1,12 +1,24 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./BlogComponent.css";
 import { blog } from "../../assets/data/blogData";
+import { motion } from "framer-motion";
 
 const BlogComponent = () => {
+  
   return (
-    <div className="blog_section secTop p20 h2B">
+    <motion.div
+      className="blog_section secTop p20 h2B"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: 50 },
+        visible: { opacity: 1, y: 0 },
+      }}
+    >
       <h2 className="sectionTitle h2B">Blog</h2>
-      <div className="blog_items">
+      <motion.div className="blog_items">
         {blog.map((item) => (
           <div className="blog_item" key={item.id}>
             <div className="blog_img">
@@ -21,8 +33,9 @@ const BlogComponent = () => {
             </div>
           </div>
         ))}
-      </div>
-    </div>
+        
+      </motion.div>
+    </motion.div>
   );
 };
 

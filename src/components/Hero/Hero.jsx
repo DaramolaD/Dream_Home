@@ -3,17 +3,38 @@ import "./Hero.css";
 import { heroImg } from "../../assets/img/brand";
 import { star } from "../../assets/icons";
 import { heroData } from "../../assets/data/brandData";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
     <div className="hero">
       <div className="hero_content p20">
-        <h1 className="heading">
+        <motion.h1
+          className="heading"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, x: -50 },
+            visible: { opacity: 1, x: 0 },
+          }}
+        >
           We work to help you
           <br />
           Build your dream building
-        </h1>
-        <ul className="content_item">
+        </motion.h1>
+        <motion.ul
+          className="content_item"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
           {heroData.map((heroItem) => (
             <li className="no" key={heroItem.no}>
               {!heroItem.img ? (
@@ -32,13 +53,36 @@ const Hero = () => {
               </div>
             </li>
           ))}
-        </ul>
+        </motion.ul>
         <div className="bgColor"></div>
       </div>
       <div className="hero_img">
         <div className="hero_Img_text">
-          <h3>Avenues of Excellence, Crafted by Alliance</h3>
-          <p>"Dedication to quality, partnership, excellence and delivering of top-notch construction solutions."</p>
+          <motion.h3
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            Avenues of Excellence, Crafted by Alliance
+          </motion.h3>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            "Dedication to quality, partnership, excellence and delivering of
+            top-notch construction solutions."
+          </motion.p>
         </div>
       </div>
     </div>

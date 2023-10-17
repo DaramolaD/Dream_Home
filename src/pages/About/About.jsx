@@ -3,49 +3,188 @@ import "./About.css";
 import { aboutUsData } from "../../assets/data/brandData";
 import { aboutVideo, storyImg } from "../../assets/img/brand";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <div className="about bg1 secTop2">
       <div className="container p20">
-        <h2 className="sectionHeading">About</h2>
-        <div className="brand_text">
+        <motion.h2
+          className="sectionHeading"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
+          About
+        </motion.h2>
+        <motion.div
+          className="brand_text"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={{
+            hidden: { opacity: 0, y: 50 },
+            visible: { opacity: 1, y: 0 },
+          }}
+        >
           <h3 className="sectionTitle">{aboutUsData.welcome.details}</h3>
-        </div>
+        </motion.div>
         <div className="brand_story mTop3">
-          <div className="aboutImgCont">
+          <motion.div
+            className="aboutImgCont"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, y: -50 },
+              visible: { opacity: 1, y: 0 },
+            }}
+          >
             <img src={storyImg} alt="about_img" />
-          </div>
+          </motion.div>
           <div className="storyCont">
-            <h3 className="sectionTitle">{aboutUsData.story.title}</h3>
-            <p className="para">{aboutUsData.story.details}</p>
+            <motion.h3
+              className="sectionTitle"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.story.title}
+            </motion.h3>
+            <motion.p
+              className="para"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.story.details}
+            </motion.p>
           </div>
         </div>
 
         <div className="philosophy mTop3">
-          <h3 className="sectionTitle">{aboutUsData.philosophy.title}</h3>
-          <p className="para">{aboutUsData.philosophy.details}</p>
+          <motion.h3
+            className="sectionTitle"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            {aboutUsData.philosophy.title}
+          </motion.h3>
+          <motion.p
+            className="para"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            {aboutUsData.philosophy.details}
+          </motion.p>
         </div>
 
         <div className="approach mTop3">
           <div className="approachContent">
-            <h3 className="sectionTitle">{aboutUsData.approach.title}</h3>
-            <p className="para">{aboutUsData.approach.details}</p>
+            <motion.h3
+              className="sectionTitle"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.approach.title}
+            </motion.h3>
+            <motion.p
+              className="para"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.approach.details}
+            </motion.p>
           </div>
-          <div className="video">
+          <motion.div
+            className="video"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
             {/* <video src={aboutVideo} loop="" muted="" autoplay=""></video> */}
-            <video autoplay muted loop>
+            <video autoPlay muted loop controls>
               <source src={aboutVideo} type="video/mp4" />
               <p className="para">
                 Sorry, Your Browser doesn't support Embedded videos.{" "}
               </p>
             </video>
-          </div>
+          </motion.div>
         </div>
 
         <div className="vision mTop3">
-          <h3 className="sectionTitle">{aboutUsData.vision.title}</h3>
-          <p className="para">{aboutUsData.vision.details}</p>
+          <motion.h3
+            className="sectionTitle"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            {aboutUsData.vision.title}
+          </motion.h3>
+          <motion.p
+            className="para"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            variants={{
+              hidden: { opacity: 0, x: -50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            {aboutUsData.vision.details}
+          </motion.p>
         </div>
         {/* <div className="team mTop3"> */}
         {/* Team */}
@@ -53,15 +192,49 @@ const About = () => {
           <p>{aboutUsData.vision.details}</p> */}
         {/* </div> */}
 
-        <div className="aboutCta mTop3">
+        <motion.div
+          className="aboutCta mTop3"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3 }}
+          variants={{
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 },
+          }}
+        >
           <div className="ctaContent">
-            <h3 className="sectionTitle">{aboutUsData.alliance.title}</h3>
-            <p className="para">{aboutUsData.alliance.details}</p>
+            <motion.h3
+              className="sectionTitle"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.alliance.title}
+            </motion.h3>
+            <motion.p
+              className="para"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              variants={{
+                hidden: { opacity: 0, x: -50 },
+                visible: { opacity: 1, x: 0 },
+              }}
+            >
+              {aboutUsData.alliance.details}
+            </motion.p>
           </div>
           <Link to="/contact" className="btn2">
             Contact Us
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
