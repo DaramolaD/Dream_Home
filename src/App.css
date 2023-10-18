@@ -206,7 +206,8 @@ video {
   color: var(--colorW);
 }
 .btnContactUs {
-  font-size: 14px
+  font-size: 14px;
+  text-align: initial;
 }
 .brand_text {
   padding: 20px;
