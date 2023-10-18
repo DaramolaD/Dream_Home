@@ -22,6 +22,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--bg1);
 }
 :root {
   /* Color */
@@ -107,7 +108,7 @@ input {
 /* REUSABLES */
 
 .sectionHeading {
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--colorW);
   text-align: center;
 }
@@ -116,6 +117,7 @@ input {
   max-width: 1320px;
   width: 100%;
   margin: 0px auto;
+  overflow: hidden;
 }
 img,
 video {
@@ -142,10 +144,10 @@ video {
   color: var(--color1);
 }
 .sectionTitle {
-  font-size: var(--font2);
+  font-size: var(--font15);
   color: var(--colorW);
   text-align: center;
-  line-height: 3rem;
+  /* line-height: 3rem; */
 }
 .sectionSubTitle {
   font-size: var(--font15);
@@ -203,6 +205,9 @@ video {
   border-radius: 20px;
   color: var(--colorW);
 }
+.btnContactUs {
+  font-size: 14px
+}
 .brand_text {
   padding: 20px;
   color: var(--colorW);
@@ -210,8 +215,8 @@ video {
 .brand_text h3 {
   text-align: center;
   font-weight: normal;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 18px;
+  /* line-height: 40px; */
 }
 .border {
   border-top: 1px solid gray;

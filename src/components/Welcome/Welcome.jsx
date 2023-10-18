@@ -46,7 +46,7 @@ const Welcome = () => {
         }}
       >
         <Link to="/contact">
-          <p className="btn2">Contact Us</p>
+          <p className="btn2 btnContactUs">Contact Us</p>
         </Link>
       </motion.div>
     </div>

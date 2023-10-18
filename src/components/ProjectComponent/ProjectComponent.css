@@ -31,7 +31,6 @@
 }
 .projectContent .projectDetails {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   font-size: 15px;
   color: var(--color2);

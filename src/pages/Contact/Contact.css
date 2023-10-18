@@ -1,0 +1,30 @@
+.contact .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.inputItem {
+  border: 1px solid var(--brandColor);
+  padding: 10px;
+  color: var(--colorW);
+  width: 100%;
+}
+.buttonCont {
+  display: flex;
+  align-items: flex-end;
+}
+.formContent {
+  margin-top: 50px;
+}
+.textContent > * {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {grid-template-columns: 1fr;}
+}

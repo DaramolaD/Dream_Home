@@ -2,6 +2,8 @@ import React from "react";
 import { aboutUsData } from "../../assets/data/brandData";
 import { motion } from "framer-motion";
 
+import "./About.css"
+
 const About = () => {
   return (
     <div className="about mTop3 border p20">

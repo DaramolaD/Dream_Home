@@ -6,7 +6,9 @@
 .welcome h3 {
   padding-bottom: 30px;
   color: var(--colorW);
+  font-size: 1.5rem;
 }
 .welcome .para {
-  line-height: 2rem;
+  /* line-height: 2rem; */
+  font-size: 16px;
 }

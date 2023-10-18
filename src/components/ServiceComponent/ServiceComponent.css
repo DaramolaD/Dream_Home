@@ -2,6 +2,9 @@
 .serviceComponent a {
   color: var(--colorW);
 }
+.serviceComponent .para {
+  font-size: 16px;
+}
 .serviceListingItem .para {
   max-width: 287px;
   overflow: hidden;
@@ -37,6 +40,6 @@
   box-shadow: 1px 1px 20px var(--brandColor);
 }
 .btnCont {
-  padding-top: 50px;
+  padding: 50px 20px 20px;
   max-width: fit-content;
 }
