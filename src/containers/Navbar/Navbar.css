@@ -37,7 +37,7 @@ header {
 }
 .header .container {
   height: 80px;
-  position: relative;
+  /* position: relative; */
 }
 .nav_btn .btn_link {
   color: #fff;
