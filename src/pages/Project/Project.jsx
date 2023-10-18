@@ -26,7 +26,7 @@ const Project = () => {
           <img src={maintenance} alt="maintenance" />
         </div>
 
-        <div className="cta secTop p20">
+        {/* <div className="cta secTop p20">
           <motion.h3
             className="sectionTitle"
             initial="hidden"
@@ -68,7 +68,7 @@ const Project = () => {
           >
             DREAMY
           </motion.p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
